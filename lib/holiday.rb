@@ -96,15 +96,10 @@ def all_supplies_in_holidays(holiday_hash)
         end
         puts "  #{capitalized_holiday.join(" ")}: #{supplies.join(", ")}"
       end
-      # supplies.each do |supply|
-      #   if supplies.index_of(supply) != sup
-      #     puts "  #{supply}"
-      # end
     end
   end
 end
 
-# all_supplies_in_holidays(holiday_supplies)
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
@@ -120,39 +115,3 @@ def all_holidays_with_bbq(holiday_hash)
 
   holiday_array
 end
-
-
-#attemp1
-# season_array = []
-# holiday_array = []
-# supplies_array = []
-#
-# holiday_hash.each do |season, data|
-#   season_array << season.to_s.capitalize + ":"
-#   #binding.pry
-#   data.each do |holiday, supplies|
-#     holiday.to_s.each do |x|
-#       split = x.split("_")
-#       if split.instance_of?(String)
-#         holiday_array << split.capitalize
-#       elsif split.instance_of?(Array)
-#         holiday_array << split.capitalize.join
-#       end
-#     end
-#   end
-#   binding.pry
-# end
-
-#attempt2
-# season_array = []
-# holiday_array = []
-# supplies_array = []
-#
-#
-# holiday_hash.each do |season, data|
-#   season_array << season.to_s.capitalize + ":"
-#   data.each do |holiday, supplies|
-#     holiday_array << holiday
-#     supplies_array << supplies
-#   end
-# end
